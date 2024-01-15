@@ -7,4 +7,4 @@ if [-z "$PYFILE"]; then
 fi
 
 # Run the Python Script
-python "$PYFILE"
+python3 "$PYFILE"
