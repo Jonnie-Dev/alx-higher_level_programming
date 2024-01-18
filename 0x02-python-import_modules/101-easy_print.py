@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-exec('exit("#pythoniscool")')
+exec('exit("#pythoniscool"\n)')
