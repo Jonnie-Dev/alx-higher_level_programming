@@ -12,12 +12,12 @@ if __name__ == "__main__":
 
     a, operator, b = sys.argv[1], sys.argv[2], sys.argv[3]
 
-    if not (a.isdigit() or (a[1:].isdigit() and a[0] == '-')) or not (b.isdigit() or (b[1:].isdigit() and b[0] == '-')):
+    if (not a.isdigit() or (a[1:].isdigit() and a[0] == '-')) or \
+       (not b.isdigit() or (b[1:].isdigit() and b[0] == '-')):
         print("Invalid input. <a> and <b> must be integers.")
         sys.exit(1)
 
     a, b = int(a), int(b)
-    
     result = operators[operator](a, b)
 
     print("{} {} {} = {}".format(a, operator, b, result))
