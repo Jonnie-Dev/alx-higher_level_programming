@@ -12,4 +12,4 @@ def add_tuple(tuple_a=(), tuple_b=()):
 
     # Now, both lists have the same length
     tuple_res = [a + b for a, b in zip(list_a, list_b)]
-    return tuple(tuple_res)
+    return tuple(tuple_res[0:2])
