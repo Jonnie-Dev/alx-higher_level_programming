@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
+
 def best_score(a_dict):
-    if a_dict is None:
+    if a_dict is None or len(a_dict) == 0:
         return None
     highest = ["", 0]
     for key in a_dict.keys():
